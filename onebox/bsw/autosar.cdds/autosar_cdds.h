@@ -1,0 +1,53 @@
+/**
+ *******************************************************************************
+ * @file      autosar_cdds.h
+ * @brief     AUTOSAR 复杂设备驱动（CDD）模块接口声明
+ * @version   1.0.0
+ * @date      2026-08-17
+ * @note      本文件为 Git 版本管理演示用的 C 代码模板，可按需填充。
+ *
+ * 修改记录:
+ *   版本     日期         作者       说明
+ *   1.0.0   2026-08-17   demo       初始版本
+ *******************************************************************************
+ */
+#ifndef AUTOSAR_CDDS_H
+#define AUTOSAR_CDDS_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* ==================== 版本信息 ==================== */
+#define AUTOSAR_CDDS_VERSION_STRING   "1.0.0"
+
+/* ==================== 宏定义 ==================== */
+/* TODO: 在此添加模块相关宏定义 */
+
+/* ==================== 类型定义 ==================== */
+/* TODO: 在此添加模块相关类型定义 */
+
+/* ==================== 函数声明 ==================== */
+/**
+ * @brief  模块初始化，系统上电时调用一次
+ * @retval 无
+ */
+void AutosarCdds_Init(void);
+
+/**
+ * @brief  模块周期处理函数，由调度器周期调用
+ * @retval 无
+ */
+void AutosarCdds_MainFunction(void);
+
+/**
+ * @brief  获取模块版本号字符串
+ * @retval 形如 "1.0.0" 的版本字符串
+ */
+const char *AutosarCdds_GetVersion(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* AUTOSAR_CDDS_H */
