@@ -36,3 +36,9 @@ const char *Asic_GetVersion(void)
 {
     return ASIC_VERSION_STRING;
 }
+
+
+void Asic_ReadDtc(void)
+{
+   //add the read dtc for initial version 
+}

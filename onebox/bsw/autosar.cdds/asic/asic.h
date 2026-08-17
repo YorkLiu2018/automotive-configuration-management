@@ -46,6 +46,11 @@ void Asic_MainFunction(void);
  */
 const char *Asic_GetVersion(void);
 
+/**
+ * @brief  读取ASIC的DTC
+ * @retval 形如0x02
+ */
+void Asic_ReadDtc(void);
 #ifdef __cplusplus
 }
 #endif
